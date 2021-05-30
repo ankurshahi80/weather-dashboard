@@ -23,10 +23,12 @@
                 <h2>
                     Search for a City:
                 </h2>
-                <input class="mb-3"></input>
-                <div class="d-grid mb-3">
-                    <button type="button" class="btn btn-block btn-primary">Search</button>
-                </div>
+                <form id="user-request">
+                    <input name="city-name" id="city-name" type="text" autofocus="true" class="form-control mb-3" />
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-block btn-primary">Search</button>
+                    </div>
+                </form>
                 <div class="border-top border-dark">
                     <ul class="list-group text-center d-none d-lg-block mt-3">
                         <li class="list-group-item list-group-item-dark mb-3">Austin</li>
@@ -115,5 +117,6 @@
             </div>
         </div>
     </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
