@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <!-- Create the Weather Dashboard header -->
+    <header>
+        <h1 class = "bg-primary bg-gradient text-white text-center mb-3">
+            Weather Dashboard
+        </h1>
+    </header>
+    <!-- Create a two column layout -->
+    <div class = "container">
+    <!-- Column one to include the Search form and historical results -->
+        <div class="row">
+            <div class="col-12 col-lg-3 d-flex flex-column">
+                <h2>
+                    Search for a City:
+                </h2>
+                <input class="mb-3"></input>
+                <div class="d-grid mb-3">
+                    <button type="button" class="btn btn-block btn-primary">Search</button>
+                </div>
+                <div class="border-top border-dark">
+                    <ul class="list-group text-center d-none d-lg-block mt-3">
+                        <li class="list-group-item list-group-item-dark mb-3">Austin</li>
+                        <li class="list-group-item list-group-item-dark mb-3">Chicago</li>
+                        <li class="list-group-item list-group-item-dark mb-3">New York</li>
+                        <li class="list-group-item list-group-item-dark mb-3">Orlando</li>
+                        <li class="list-group-item list-group-item-dark mb-3">San Francisco</li>
+                        <li class="list-group-item list-group-item-dark mb-3">Seattle</li>
+                        <li class="list-group-item list-group-item-dark mb-3">Denver</li>
+                        <li class="list-group-item list-group-item-dark mb-3">Atlanta</li>
+                    </ul>
+                </div>
+            </div>
+    <!-- Column two to include the current weather and 5 day forecast -->
+            
+            <div class="col-12 col-lg-9 d-flex flex-column">
+                <div class="row mb-3">
+                    <div class="col-12 border border-secondary">
+                        <h2>Atlanta <span>(03/30/2021) </span><span>🌤</span></h2>
+                        <p>Temp: <span>74.01 F</span></p>
+                        <p>Wind: <span>6.67 MPH</span></p>
+                        <p>Humidity: <span>46%</span></p>
+                        <p>UV Index: <span class="bg-success">0.47</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>5-Day Forecast:</h3>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-2 card p-0 mb-3">
+                        <h4 class="card-header text-light bg-dark p-1 border-0">
+                            3/31/2021
+                        </h4>
+                        <ul id="list-toDo" class="list-group text-white list-group-flush">
+                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
+                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2 card p-0 mb-3">
+                        <h4 class="card-header text-light bg-dark p-1 border-0">
+                            3/31/2021
+                        </h4>
+                        <ul id="list-toDo" class="list-group text-white list-group-flush">
+                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
+                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2 card p-0 mb-3">
+                        <h4 class="card-header text-light bg-dark p-1 border-0">
+                            3/31/2021
+                        </h4>
+                        <ul id="list-toDo" class="list-group text-white list-group-flush">
+                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
+                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2 card p-0 mb-3">
+                        <h4 class="card-header text-light bg-dark p-1 border-0">
+                            3/31/2021
+                        </h4>
+                        <ul id="list-toDo" class="list-group text-white list-group-flush">
+                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
+                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2 card p-0 mb-3">
+                        <h4 class="card-header text-light bg-dark p-1 border-0">
+                            3/31/2021
+                        </h4>
+                        <ul id="list-toDo" class="list-group text-white list-group-flush">
+                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
+                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
+                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
