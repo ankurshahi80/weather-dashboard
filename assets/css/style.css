@@ -6,3 +6,12 @@
   h4,h3 {
       font-size: 16px;
   }
+  .severe {
+      background-color: palevioletred;
+  }
+  .moderate {
+      background-color: palegoldenrod;
+  }
+  .favorable {
+      background-color: palegreen;
+  }

@@ -19,7 +19,7 @@
     <div class = "container">
     <!-- Column one to include the Search form and historical results -->
         <div class="row">
-            <div class="col-12 col-lg-3 d-flex flex-column">
+            <section class="col-12 col-lg-3 d-flex flex-column">
                 <h2>
                     Search for a City:
                 </h2>
@@ -41,82 +41,72 @@
                         <li class="list-group-item list-group-item-dark mb-3">Atlanta</li>
                     </ul>
                 </div>
-            </div>
+            </section>
     <!-- Column two to include the current weather and 5 day forecast -->
             
             <div class="col-12 col-lg-9 d-flex flex-column">
-                <div class="row mb-3">
+                <main class="row mb-3">
                     <div class="col-12 border border-secondary">
-                        <h2>Atlanta <span>(03/30/2021) </span><span>🌤</span></h2>
-                        <p>Temp: <span>74.01 F</span></p>
-                        <p>Wind: <span>6.67 MPH</span></p>
-                        <p>Humidity: <span>46%</span></p>
-                        <p>UV Index: <span class="bg-success">0.47</span></p>
+                        <div class="row">
+                            <h2> <span id="display-city-name"></span><span id="display-date"></span></h2>
+                            <img class="img-fluid" id="weather-icon"/>
+                        <!-- <img id="weather-icon"/> -->
+                        </div>
+                        <p>Temp: <span id="display-temp"></span></p>
+                        <p>Wind: <span id="display-wind"></span></p>
+                        <p>Humidity: <span id="display-humidity"></span></p>
+                        <p>UV Index: <span id="display-uvindex"></span></p>
                     </div>
-                </div>
+                </main>
                 <div class="row">
                     <h3>5-Day Forecast:</h3>
                 </div>
-                <div class="row justify-content-between">
+                <section class="row justify-content-between">
                     <div class="col-12 col-lg-2 card p-0 mb-3">
-                        <h4 class="card-header text-light bg-dark p-1 border-0">
-                            3/31/2021
+                        <h4 id="day-1" class="card-header text-light bg-dark p-1 border-0">
+                            
                         </h4>
-                        <ul id="list-toDo" class="list-group text-white list-group-flush">
-                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
-                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        <ul id="day-1-items" class="list-group text-white list-group-flush">
+                            <!-- Forecast goes here -->
                         </ul>
                     </div>
                     <div class="col-12 col-lg-2 card p-0 mb-3">
-                        <h4 class="card-header text-light bg-dark p-1 border-0">
-                            3/31/2021
+                        <h4 id="day-2" class="card-header text-light bg-dark p-1 border-0">
+                            
                         </h4>
-                        <ul id="list-toDo" class="list-group text-white list-group-flush">
-                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
-                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        <ul id="day-2-items" class="list-group text-white list-group-flush">
+                            <!-- Forecast goes here -->
                         </ul>
                     </div>
                     <div class="col-12 col-lg-2 card p-0 mb-3">
-                        <h4 class="card-header text-light bg-dark p-1 border-0">
-                            3/31/2021
+                        <h4 id="day-3" class="card-header text-light bg-dark p-1 border-0">
+                            
                         </h4>
-                        <ul id="list-toDo" class="list-group text-white list-group-flush">
-                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
-                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        <ul id="day-3-items" class="list-group text-white list-group-flush">
+                            <!-- Forecast goes here -->
                         </ul>
                     </div>
                     <div class="col-12 col-lg-2 card p-0 mb-3">
-                        <h4 class="card-header text-light bg-dark p-1 border-0">
-                            3/31/2021
+                        <h4 id="day-4" class="card-header text-light bg-dark p-1 border-0">
+                            
                         </h4>
-                        <ul id="list-toDo" class="list-group text-white list-group-flush">
-                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
-                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        <ul id="day-4-items" class="list-group text-white list-group-flush">
+                            <!-- Forecast goes here -->
                         </ul>
                     </div>
                     <div class="col-12 col-lg-2 card p-0 mb-3">
-                        <h4 class="card-header text-light bg-dark p-1 border-0">
-                            3/31/2021
+                        <h4 id="day-5" class="card-header text-light bg-dark p-1 border-0">
+                            
                         </h4>
-                        <ul id="list-toDo" class="list-group text-white list-group-flush">
-                            <li class="list-group-item p-1 bg-dark border-0">🌤</li>
-                            <li class="list-group-item p-1 bg-dark border-0">Temp: <span>73.72 F</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Wind: <span>6.67 MPH</span></li>
-                            <li class="list-group-item p-1 bg-dark border-0">Humidity: <span>46%</span></li>
+                        <ul id="day-5-items" class="list-group text-white list-group-flush">
+                            <!-- Forecast goes here -->
                         </ul>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
