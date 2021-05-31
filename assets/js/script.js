@@ -178,7 +178,8 @@ var loadSearchedCities = function() {
 var searchEventHandler= function(event){
     console.log("searchEventHandler was called");
     target=event.target;
-    console.log(target);
+    city=target.textContent;
+    getCityWeather(city);
 }
 loadSearchedCities();
 userRequestEl.addEventListener("submit",formSubmitHandler);
