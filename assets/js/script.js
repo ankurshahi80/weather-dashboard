@@ -14,7 +14,7 @@ var searchListEl=document.querySelector("#search-list");
 
 var getCityWeather=function(city) {
     // format the openweathermap api url
-    var apiUrl = "http://api.openweathermap.org/data/2.5/forecast?units=imperial&q="+city+"&appid="+apiKey;
+    var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?units=imperial&q="+city+"&appid="+apiKey;
     
     // make a request to the url
     fetch(apiUrl).then(function(response){
