@@ -165,11 +165,8 @@ var loadSearchedCities = function() {
     if (!savedCities) {
         var savedCities=[];
         localStorage.setItem("cities",JSON.stringify(savedCities));
-        console.log("savedCities",savedCities);
     }else
     savedCities=JSON.parse(savedCities);
-    console.log(savedCities);
-    
     for (var i=0;i<savedCities.length;i++) {
         var savedCitiesEl = document.createElement("li");
         savedCitiesEl.textContent=savedCities[i];
@@ -177,6 +174,13 @@ var loadSearchedCities = function() {
         searchListEl.appendChild(savedCitiesEl);
     };
 }
+
+var searchEventHandler= function(event){
+    console.log("searchEventHandler was called");
+    target=event.target;
+    console.log(target);
+}
 loadSearchedCities();
 userRequestEl.addEventListener("submit",formSubmitHandler);
+searchListEl.addEventListener("click",searchEventHandler);
 
